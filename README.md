@@ -35,4 +35,4 @@ CUDA_VISIBLE_DEVICES=0 python examples/segmentation/main.py --cfg cfgs/s3dis/den
 CUDA_VISIBLE_DEVICES=0 python examples/shapenetpart/main.py --cfg cfgs/shapenetpart/denet.yaml --mode test --pretrained_path /path/to/pretrained/network 
 ```
 ## Acknowledgement
-This repository is based on the codes of [PointNeXt](https://github.com/guochengqian/PointNeXt) and [DeLA](https://github.com/Matrix-ASC/DeLA).
+This repository is based on the codes of [PointNeXt](https://github.com/guochengqian/PointNeXt), [PointMetaBase](https://github.com/linhaojia13/PointMetaBase) and [DeLA](https://github.com/Matrix-ASC/DeLA).
