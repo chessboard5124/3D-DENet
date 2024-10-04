@@ -12,7 +12,7 @@ build_dir.mkdir(exist_ok=True)
 sources = [str(p) for p in path.glob("srcs/*.*") if p.suffix in [".cpp", ".cu"]]
 
 cutils = load("cutils_", sources=sources, extra_cflags=["-O3", "-mavx2", "-funroll-loops"], extra_cuda_cflags=["-Xptxas","-v"],
-              verbose=True, build_directory=build_dir)
+              verbose=False, build_directory=build_dir)
 
 def next_prime(x) -> int:
     r"""
